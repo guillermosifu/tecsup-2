@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 
+.texto-animado {
+  animation-name: texto-volador;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+} */
+
+@keyframes texto-volador {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    background-color: red;
+    border: none;
+  }
+  to {
+    margin-left: -100%;
+    background-color: green;
+    color: #fff;
+  }
+}
+
+/* .resize{
+    border: solid;
+    width: 300px;
+    animation-name: resizeimg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes resizeimg {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 500px;
+  }
+}
+
+.boxone{
+    border: solid red;
+    width: 450px;
+    height: 300px;
+    animation-name: boxanimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes boxanimation{
+
+    0%{
+        background-image:url(../img/imagenuron.jpg);
+    }
+    25%{
+        background-color: green;
+    }
+    50%{
+        background-color: violet;
+    }
+
+    75%{
+        background-color: blue;
+    }
+    100%{
+        background-color: brown;
+    }
+
+}
