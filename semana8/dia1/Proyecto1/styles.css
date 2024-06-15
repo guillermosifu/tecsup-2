@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: .5rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu_hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.products_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product_card {
+    background-color: #eee;
+    width: max-content;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.product_card > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    object-fit: contain;
+    background-color: #fff;
+}
+.product_card > span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 412px) {
+    .menu_hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        margin: 1rem 0;;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
